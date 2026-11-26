@@ -4,7 +4,6 @@ No limpia ni guarda nada (eso lo hacen parser.py y storage.py).
 """
 import asyncio
 import logging
-
 import httpx
 
 logger = logging.getLogger(__name__)

@@ -10,3 +10,4 @@ __pycache__/
 # Datos locales pesados (la carpeta se versiona con .gitkeep)
 data/*
 !data/.gitkeep
+logs/*
