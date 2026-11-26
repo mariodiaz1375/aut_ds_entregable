@@ -1,7 +1,3 @@
-"""
-Cliente de ingesta: su ÚNICO trabajo es DESCARGAR datos de la API.
-No limpia ni guarda nada (eso lo hacen parser.py y storage.py).
-"""
 import asyncio
 import logging
 import httpx
