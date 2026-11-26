@@ -1,0 +1,12 @@
+# Secretos: NUNCA se suben al repositorio
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+
+# Datos locales pesados (la carpeta se versiona con .gitkeep)
+data/*
+!data/.gitkeep

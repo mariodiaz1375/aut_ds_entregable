@@ -1,0 +1,8 @@
+# Configuracion NO secreta del proyecto (los secretos van en .env).
+project:
+  name: ai-automation
+  stage: checkpoint-1
+paths:
+  # Siempre rutas RELATIVAS a la raiz del proyecto (nunca C:\Users\...).
+  data: data
+  notebooks: notebooks

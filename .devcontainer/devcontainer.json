@@ -1,0 +1,35 @@
+{
+  // Nombre que muestra VS Code en la esquina inferior izquierda.
+  "name": "AI Automation - Preentrega 1",
+
+  // Como se construye el contenedor. Las rutas son relativas a ESTA carpeta
+  // (.devcontainer/), por eso el Dockerfile esta en ".." y el contexto es "..".
+  "build": {
+    "dockerfile": "../Dockerfile",
+    "context": ".."
+  },
+
+  // Usuario con el que trabaja VS Code dentro del contenedor (no root).
+  "remoteUser": "vscode",
+
+  // Variables NO secretas para el contenedor. Los secretos se leen del .env.
+  "containerEnv": {
+    "PYTHONPATH": "/workspaces/${localWorkspaceFolderBasename}/src"
+  },
+
+  // Configuracion de VS Code que corre DENTRO del contenedor.
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-toolsai.jupyter",
+        "ms-azuretools.vscode-docker"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python",
+        "python.terminal.activateEnvironment": false
+      }
+    }
+  }
+}
